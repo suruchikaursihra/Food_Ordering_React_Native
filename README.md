@@ -1,44 +1,117 @@
-# Uber Eats React Native clone
+<!-- Title -->
 
-<p>
-  <!-- iOS -->
-  <a href="https://itunes.apple.com/app/apple-store/id982107779">
-    <img alt="Supports Expo iOS" longdesc="Supports Expo iOS" src="https://img.shields.io/badge/iOS-4630EB.svg?style=flat-square&logo=APPLE&labelColor=999999&logoColor=fff" />
-  </a>
-  <!-- Android -->
-  <a href="https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=blankexample">
-    <img alt="Supports Expo Android" longdesc="Supports Expo Android" src="https://img.shields.io/badge/Android-4630EB.svg?style=flat-square&logo=ANDROID&labelColor=A4C639&logoColor=fff" />
-  </a>
-  <!-- Web -->
-  <a href="https://docs.expo.dev/workflow/web/">
-    <img alt="Supports Expo Web" longdesc="Supports Expo Web" src="https://img.shields.io/badge/web-4630EB.svg?style=flat-square&logo=GOOGLE-CHROME&labelColor=4285F4&logoColor=fff" />
+<p align="center">
+  <a href="https://github.com/expo/examples">
+    <img alt="create-react-native-app" src="./assets/animations/banner.svg">
+    <h1 align="center">Create React Native App</h1>
   </a>
 </p>
 
-## 🚀 How to use
+<!-- Header -->
 
-- Install packages with `yarn` or `npm install`.
-  - If you have native iOS code run `npx pod-install`
-- Run `yarn start` to start the bundler.
-- Open the project in a React runtime to try it:
-  - iOS: [Client iOS](https://itunes.apple.com/app/apple-store/id982107779)
-  - Android: [Client Android](https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=blankexample)
-  - Web: Any web browser
+<p align="center">
+  <b>The fastest way to create universal React Native apps</b>
+  <br />
 
-## Adding Native Code
+  <p align="center">
+    <!-- iOS -->
+    <img alt="Supports Expo iOS" longdesc="Supports Expo iOS" src="https://img.shields.io/badge/iOS-000.svg?style=flat-square&logo=APPLE&labelColor=999999&logoColor=fff" />
+    <!-- Android -->
+    <img alt="Supports Expo Android" longdesc="Supports Expo Android" src="https://img.shields.io/badge/Android-000.svg?style=flat-square&logo=ANDROID&labelColor=A4C639&logoColor=fff" />
+    <!-- Web -->
+    <img alt="Supports Expo Web" longdesc="Supports Expo Web" src="https://img.shields.io/badge/web-000.svg?style=flat-square&logo=GOOGLE-CHROME&labelColor=4285F4&logoColor=fff" />
+  </p>
+  <p align="center">
+    <a href="https://packagephobia.now.sh/result?p=create-react-native-app">
+      <img alt="the best way to bootstrap a react native app" longdesc="the best way to create a react native app" src="https://flat.badgen.net/packagephobia/install/create-react-native-app" />
+    </a>
+  </p>
+  
+</p>
 
-This project can be run from a web browser or the Expo client app. You may find that you want to add more native code later on. You can do this by ejecting the project and rebuilding it yourself.
+<!-- Body -->
 
-- Run `yarn eject` to create the native projects.
-- You can still run your project in the web browser or Expo client, you just won't be able to access any new native modules you add.
+```sh
+npx create-react-native-app
+```
 
-## Publishing
+Once you're up and running with Create React Native App, visit [this tutorial](https://reactnative.dev/docs/tutorial) for more information on building mobile apps with React.
 
-- Deploy the native app to the App store and Play store using this guide: [Deployment](https://docs.expo.dev/distribution/app-stores/).
-- Deploy the website using this guide: [Web deployment](https://docs.expo.dev/distribution/publishing-websites/).
+<p align="center">
+  <img align="center" alt="Product: demo" src="https://raw.githubusercontent.com/expo/create-react-native-app/master/.gh-assets/crna.gif" />
+</p>
 
-## 📝 Notes
+## Features
 
-- Learn more about [Universal React](https://docs.expo.dev/).
-- See what API and components are [available in the React runtimes](https://docs.expo.dev/versions/latest/).
-- Find out more about developing apps and websites: [Guides](https://docs.expo.dev/guides/).
+- Native project ready to be built on to your device.
+- Support for unimodules and auto-linking.
+- OTA updates, and Gestures out of the box.
+- Full support for React Native web.
+- Plug-n-play custom templates.
+- Works with the Expo Client app.
+
+## Usage
+
+- `npx create-react-native-app` Create a new native React app.
+- `yarn ios` -- (`expo run:ios`) Build the iOS App (requires a MacOS computer).
+- `yarn android` -- (`expo run:android`) Build the Android App.
+- `yarn web` -- (`expo start:web`) Run the website in your browser.
+
+### Templates
+
+By default you create a [bare-workflow React](https://docs.expo.io/bare/exploring-bare-workflow/) project with support for iOS, Android, and web. You can opt to use an example project instead by selecting the "Templates from ..." option. Custom templates can be used with `--template <Example Name or GitHub URL>` option.
+
+- Use an [example](https://github.com/expo/examples): `npx create-react-native-app -t with-typescript`
+- Use a custom template: `npx create-react-native-app --template https://github.com/someone/my-react-starter` -- Only works with GitHub repos on the master branch.
+- All examples can be modified in the [expo/examples](https://github.com/expo/examples) repo.
+
+## Sections
+
+- [Usage with Expo Client App](#usage-with-expo-client-app)
+- [Support and Contact](#support-and-contact)
+- [FAQs](#faqs)
+- [Contributing](#contributing)
+
+## Usage with Expo Client App
+
+Expo Client enables you to work with all of the [Components and APIs](https://facebook.github.io/react-native/docs/getting-started) in `react-native`, as well as the [JavaScript APIs](https://docs.expo.io/versions/latest) that the are bundled with the Expo App.
+
+Expo Client supports running any project that doesn't have custom native modules added.
+
+- Download the "Expo Client" app from the Play Store or App Store.
+- Start your project with Expo
+  - Install the CLI `npm i -g expo-cli`
+  - Start the project `expo start`
+- Open the project:
+  - Sign in to expo and the project will appear in the app.
+  - Or point your phone's camera at the QR code in the terminal (press "c" to view it).
+
+## Support and Contact
+
+If you're having issues with Create React Native App, please make sure:
+
+- The issue is not covered in the [Expo Docs](https://docs.expo.io/versions/latest/)
+- There is not already an [open issue](https://github.com/expo/expo-cli/issues) for your particular problem
+
+If you've checked the documentation and currently open issues, please either [open a new GitHub issue](https://github.com/expo/create-react-native-app/issues/new) or ask a question on [Expo forums](https://forums.expo.io/c/help).
+
+## Contributing
+
+Please see [Contributing guide](https://github.com/expo/expo-cli/blob/master/CONTRIBUTING.md) in the Expo CLI monorepo for instructions on contributing to Expo CLI.
+
+### Attribution
+
+The examples feature was inspired by the `templates` system of [create-next-app](https://github.com/zeit/next.js/tree/canary/packages/create-next-app) by the [Vercel](https://vercel.com/) team.
+
+## Related
+
+CRNA is focused on being the fastest way to bootstrap a React Native app without worrying about the native platforms or bundlers required for developing and shipping apps. Other tools provide both an init script (which is slower) and a suite of other tools that can be used for interacting with the project. CRNA is meant to be used with any of the following tools:
+
+- [Expo CLI](https://github.com/expo/expo-cli) by [Expo team](https://expo.io)
+- [Ignite CLI](https://github.com/infinitered/ignite) by [Infinite Red](https://infinite.red/)
+- [React Native Community CLI](https://github.com/react-native-community/cli) by members of [the React Native community](https://github.com/orgs/react-native-community/people)
+
+<!-- Footer -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
