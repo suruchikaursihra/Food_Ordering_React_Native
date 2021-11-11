@@ -1,6 +1,15 @@
 import React from 'react'
 import { View, Text, Image } from 'react-native'
 
+const yelpRestaurantInfo = {
+    image: "https://cdn.homedit.com/wp-content/uploads/2016/06/Reds-True-Barbecue-building.jpg",
+    name: "Farmhouse Kitchen Thai Cuisine",
+    price: '$$',
+    reviews: 1244,
+    rating: 4.5,
+    categories: [{ title: 'Thai' }, { title: 'Vegetarian' }]
+}
+
 export default function About(props) {
 
     const { name, image, price, reviews, rating, categories } = props.route.params;

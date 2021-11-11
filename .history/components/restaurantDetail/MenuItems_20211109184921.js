@@ -35,10 +35,7 @@ export default function MenuItems() {
                 return (
                     <View key={index}>
                         <View style={styles.menuItemStyle}>
-                            <BouncyCheckBox
-                                iconStyle={{ borderRadius: 0, borderColor: 'lightgrey' }}
-                                fillColor="green"
-                            />
+                            <BouncyCheckBox />
                             <FoodInfo food={food} />
                             <FoodImage food={food} />
                         </View>

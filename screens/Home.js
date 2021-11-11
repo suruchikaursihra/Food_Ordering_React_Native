@@ -9,9 +9,9 @@ import SearchBar from '../components/home/SearchBar';
 
 const YELP_API_KEY = 'jgfZ_4ZpCjEkl9gtIXYlpvMxzU_HNdhgIfDfLueIG6whDdpYjKIjGF5pczbXNKv8c9nEMNUWlMd9pAIaw3BQKpkHqTCqupAjNevd72XflBDouqqNtH9a9FcJ0c2IYXYx';
 
-export default function Home() {
+export default function Home({ navigation }) {
 
-    const [restaurantData, setRestaurantData] = React.useState(localRestaurants);
+    const [restaurantData, setRestaurantData] = React.useState([]);
     const [city, setCity] = React.useState('Hollywood');
     const [activeTab, setActiveTab] = React.useState('Delivery');
 
@@ -44,10 +44,10 @@ export default function Home() {
             </View>
             <ScrollView showsVerticalScrollIndicator={false}>
                 <Categories />
-                <RestaurantItem restaurantData={restaurantData} />
+                <RestaurantItem restaurantData={restaurantData} navigation={navigation} />
             </ScrollView>
-            <Divider width={1}/>
-            <BottomTabs/>
+            <Divider width={1} />
+            <BottomTabs />
         </SafeAreaView>
     )
 }

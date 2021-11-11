@@ -15,8 +15,8 @@ export default function RootNavigation({ navigation }) {
 
     return (
         <NavigationContainer>
-            <Stack.Navigator initialRouteName="Home" screensOptions={screensOptions}>
-                <Stack.Screen name="Home" component={Home} navigation={navigation} />
+            <Stack.Navigator initialRouteName="RestaurantDetail" screensOptions={screensOptions}>
+                <Stack.Screen name="Home" component={Home} />
                 <Stack.Screen name="RestaurantDetail" component={RestaurantDetail} navigation={navigation} />
             </Stack.Navigator>
         </NavigationContainer>

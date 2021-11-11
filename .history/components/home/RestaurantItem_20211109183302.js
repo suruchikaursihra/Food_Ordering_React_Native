@@ -42,6 +42,7 @@ export const localRestaurants = [
 ];
 
 export default function RestaurantItem({ navigation, ...props }) {
+    console.log(navigation);
     return (
         <>
             {props && props.restaurantData.map((restaurant, index) => (
